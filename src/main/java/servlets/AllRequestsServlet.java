@@ -20,6 +20,8 @@ public class AllRequestsServlet extends HttpServlet {
         Map<String,Object> pageVariables = createPageVariablesMap(request);
         pageVariables.put("message", "");
         response.getWriter().println();
+        //testcomment
+        
     }
 
     private static Map<String, Object> createPageVariablesMap(HttpServletRequest request){
