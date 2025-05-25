@@ -37,7 +37,7 @@ public class AllRequestsServlet extends HttpServlet {
         } else {
             response.setStatus(HttpServletResponse.SC_OK);
         }
-        pageVariables.put("message",message=null ? "" : message);
+        pageVariables.put("message",message==null ? "" : message);
 
         response.getWriter().println(PageGenerator.instance().getPage("page.html",pageVariables));
     }
